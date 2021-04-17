@@ -20,7 +20,7 @@ $provisioningscript = <<SCRIPT
     wget --progress=bar:force 'https://raw.githubusercontent.com/jimbob88/pebble-sdk-alpine-vagrant/main/.profile'
     source /home/vagrant/pebble-dev/pebble-sdk-4.5-linux64/.env/bin/activate
     export PATH=/home/vagrant/pebble-dev/pebble-sdk-4.5-linux64/bin:$PATH
-    pebble sdk install https://github.com/aveao/PebbleArchive/raw/master/SDKCores/sdk-core-4.3.tar.bz2
+    yes | pebble sdk install https://github.com/aveao/PebbleArchive/raw/master/SDKCores/sdk-core-4.3.tar.bz2
 SCRIPT
 
 Vagrant.configure("2") do |config|
